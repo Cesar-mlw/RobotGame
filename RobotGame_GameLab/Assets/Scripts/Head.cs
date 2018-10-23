@@ -15,6 +15,9 @@ public class Head : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+	}
+	void Shoot() {
 		
 	}
 	public int DmgRange{

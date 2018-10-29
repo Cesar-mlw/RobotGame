@@ -8,8 +8,10 @@ public class Head : MonoBehaviour {
 	private float damage;
 	private float dmgInterval;
 	private int dmgRange;
-
+	public Transform FirePoint;
 	private bool onBoard = false;
+
+	public GameObject bullet;
 	// Use this for initialization
 	void Start () {
 		
@@ -22,7 +24,7 @@ public class Head : MonoBehaviour {
 		}
 	}
 	void Shoot() {
-
+		Instantiate(bullet, FirePoint);
 	}
 	public int DmgRange{
 		get{

@@ -13,4 +13,5 @@ public class SpecialEffect : MonoBehaviour {
 	void Update () {
 		
 	}
+	
 }

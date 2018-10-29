@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Head : MonoBehaviour {
-	private double hp;
+	private float hp;
 	private int cost;
-	private double damage;
-	private double dmgInterval;
+	private float damage;
+	private float dmgInterval;
 	private int dmgRange;
+
+	private bool onBoard = false;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,10 +17,12 @@ public class Head : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
+		if(onBoard){
+			InvokeRepeating("Shoot", 1f, dmgInterval);
+		}
 	}
 	void Shoot() {
-		
+
 	}
 	public int DmgRange{
 		get{
@@ -28,7 +32,7 @@ public class Head : MonoBehaviour {
 			dmgRange = value;
 		}
 	}
-	public double DmgInterval{
+	public float DmgInterval{
 		get{
 			return dmgInterval;
 		}
@@ -36,7 +40,7 @@ public class Head : MonoBehaviour {
 			dmgInterval = value;
 		}
 	}
-	public double Damage{
+	public float Damage{
 		get{
 			return damage;
 		}
@@ -44,7 +48,7 @@ public class Head : MonoBehaviour {
 			damage = value;
 		}
 	}
-	public double Hp{
+	public float Hp{
 		get{
 			return hp;
 		}

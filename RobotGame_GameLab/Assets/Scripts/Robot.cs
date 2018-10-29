@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Robot : MonoBehaviour {
-	private double hp;
+	private float hp;
 
 	private
 	// Use this for initialization

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour {
-	private double hp;
+	private float hp;
 	private int cost;
 	private SpecialEffect spEffect;
 	// Use this for initialization
@@ -31,7 +31,7 @@ public class NewBehaviourScript : MonoBehaviour {
 			cost = value;
 		}
 	}
-	public double Hp{
+	public float Hp{
 		get{
 			return hp;
 		}

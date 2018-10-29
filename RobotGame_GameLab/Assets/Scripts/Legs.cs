@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Legs : MonoBehaviour {
-	private double hp;
+	private float hp;
 	private int cost;
-	private double speed;
+	private float speed;
 	private int traction;
 	// Use this for initialization
 	void Start () {
@@ -24,7 +24,7 @@ public class Legs : MonoBehaviour {
 			traction = value;
 		}
 	}
-	private double Speed{
+	private float Speed{
 		get{
 			return speed;
 		}
@@ -40,7 +40,7 @@ public class Legs : MonoBehaviour {
 			cost = value;
 		}
 	}
-	private double Hp{
+	private float Hp{
 		get{
 			return hp;
 		}

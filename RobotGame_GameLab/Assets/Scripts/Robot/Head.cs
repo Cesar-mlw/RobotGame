@@ -7,9 +7,9 @@ public class Head : MonoBehaviour {
 	private int cost;
 	private float damage;
 	private float dmgInterval;
-	private int dmgRange;
+	private int dmgRange = 5;
 	public Transform FirePoint;
-	private bool onBoard = false;
+	private bool onBoard = true;
 
 	public GameObject bullet;
 	// Use this for initialization
@@ -19,12 +19,12 @@ public class Head : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(onBoard){
+		if(Input.GetKeyDown(KeyCode.LeftControl)){
 			InvokeRepeating("Shoot", 1f, dmgInterval);
 		}
 	}
 	void Shoot() {
-		Instantiate(bullet, FirePoint);
+		Instantiate(bullet, FirePoint.position, FirePoint.rotation);
 	}
 	public int DmgRange{
 		get{

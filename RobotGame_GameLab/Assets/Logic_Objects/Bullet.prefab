@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 50662950827090676}
-  FPoint: {fileID: 0}
 --- !u!212 &212507331853078820
 SpriteRenderer:
   m_ObjectHideFlags: 1

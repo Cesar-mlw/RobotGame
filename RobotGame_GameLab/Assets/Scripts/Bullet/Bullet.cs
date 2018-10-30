@@ -8,13 +8,16 @@ public class Bullet : MonoBehaviour {
 	public Rigidbody2D rb;
 	private float dmgRange = -5f;
 	private int damage = 100;
-	public Transform FPoint;
+	
+	private float InitialX;
+	private float InitialY;
 	void Start () {
 		rb.velocity = (transform.right * -1) * speed;
-		FPoint = GameObject.Find("FirePoint").GetComponent<Transform>();
+		InitialX = rb.position.x;
+		InitialY = rb.position.y;
 	}
 	private void FixedUpdate() {
-		if(-FPoint.position.x + gameObject.transform.position.x < dmgRange){
+		if(-InitialX + gameObject.transform.position.x < dmgRange){
 			Destroy(gameObject);
 		}
 	}

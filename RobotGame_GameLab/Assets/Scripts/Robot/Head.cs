@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Head : MonoBehaviour {
 	private float hp;
+	private Rigidbody2D rb;
 	private int cost;
-	private float damage;
 	private float dmgInterval= 1f;
 	public Transform FirePoint;
 	private bool onBoard = true;
@@ -14,7 +14,6 @@ public class Head : MonoBehaviour {
 	public GameObject bullet;
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -35,14 +34,7 @@ public class Head : MonoBehaviour {
 			dmgInterval = value;
 		}
 	}
-	public float Damage{
-		get{
-			return damage;
-		}
-		set{
-			damage = value;
-		}
-	}
+
 	public float Hp{
 		get{
 			return hp;

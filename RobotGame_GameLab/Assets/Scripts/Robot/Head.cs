@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Head : MonoBehaviour {
-	private float hp;
+	private float hp = 200;
 	private Rigidbody2D rb;
 	private int cost;
 	private float dmgInterval= 1f;
 	public Transform FirePoint;
 	private bool onBoard = true;
 
+	public GameManager gameManager;
 	private bool shooting = false;
 	public GameObject bullet;
 	// Use this for initialization
@@ -25,6 +26,14 @@ public class Head : MonoBehaviour {
 	}
 	void Shoot() {
 		Instantiate(bullet, FirePoint.position, FirePoint.rotation);
+	}
+
+	public void TakeDamage(float damage){
+		Debug.Log(hp);
+		hp -= damage;
+		if(hp <= 0){
+			gameManager.Die(gameObject);
+		}
 	}
 	public float DmgInterval{
 		get{

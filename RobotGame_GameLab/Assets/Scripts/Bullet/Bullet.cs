@@ -14,7 +14,7 @@ public class Bullet : MonoBehaviour {
 	void Start () {
 		rb.velocity = (transform.right * -1) * speed;
 		InitialX = rb.position.x;
-		InitialY = rb.position.y;
+		Physics2D.IgnoreCollision(GetComponent<BoxCollider2D>(), GetComponent<CircleCollider2D>());
 	}
 	private void FixedUpdate() {
 		if(-InitialX + gameObject.transform.position.x < dmgRange){
@@ -22,9 +22,18 @@ public class Bullet : MonoBehaviour {
 		}
 	}
 	void OnTriggerEnter2D(Collider2D hitInfo) {
-		Enemy enemy = hitInfo.GetComponent<Enemy>();
+		Head enemy = hitInfo.GetComponent<Head>();
+		Debug.Log(enemy);
 		if(enemy != null){
-			enemy.TakeDamage(damage);
+			if(enemy.name.Equals("Head 1")){//FIX THIS IF
+				enemy.TakeDamage(damage);
+			}
+			else{
+				return;
+			}
+		}
+		else{
+			return;
 		}
 		Destroy(gameObject);
 	}

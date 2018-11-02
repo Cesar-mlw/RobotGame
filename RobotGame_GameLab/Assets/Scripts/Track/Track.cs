@@ -6,11 +6,21 @@ public class Track : MonoBehaviour {
 
 	public GameObject[] parts;
 	// Use this for initialization
-	void Start () {
+	void Start () {	
+		SpanwnParts();
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
+	}
+
+	void SpanwnParts(){
+		foreach(var i in parts){
+		}
+	}
+
+	void MoveParts(){
+
 	}
 }

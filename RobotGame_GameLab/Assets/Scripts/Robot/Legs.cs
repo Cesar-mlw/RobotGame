@@ -7,7 +7,7 @@ public class Legs : MonoBehaviour {
 	private int cost;
 	private float speed = 0.7f;
 	private int traction = 2;
-
+	public Transform trs;
 	public Rigidbody2D rb;
 	private bool onBoard = false;
 	// Use this for initialization
@@ -16,12 +16,17 @@ public class Legs : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void FixedUpdate () {
+		if(trs.position.x <= -3.07)	{
+			Stop();
+		}
 	}
 
 	void Walk() {
 
+	}
+	void Stop(){
+		rb.velocity = Vector2.zero;
 	}
 	private int Traction{
 		get{

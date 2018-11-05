@@ -25,11 +25,10 @@ public class Head : MonoBehaviour {
 		}
 	}
 	void Shoot() {
-		Instantiate(bullet, FirePoint.position, FirePoint.rotation);
+		Instantiate(bullet, FirePoint.position, FirePoint.rotation, gameObject.transform);
 	}
 
 	public void TakeDamage(float damage){
-		Debug.Log(hp);
 		hp -= damage;
 		if(hp <= 0){
 			gameManager.Die(gameObject);

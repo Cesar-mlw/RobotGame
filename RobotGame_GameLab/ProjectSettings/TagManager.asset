@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Head
-  - Enemy Head
+  - PlayerHead
+  - EnemyHead
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -15,8 +17,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Player
+  - Parts
   - 
   - 
   - 

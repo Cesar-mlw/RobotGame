@@ -23,9 +23,9 @@ public class Bullet : MonoBehaviour {
 	}
 	void OnTriggerEnter2D(Collider2D hitInfo) {
 		Head enemy = hitInfo.GetComponent<Head>();
-		Debug.Log(enemy);
 		if(enemy != null){
-			if(enemy.name.Equals("Head 1")){//FIX THIS IF
+			if(enemy.tag != gameObject.transform.parent.tag && enemy.tag != "Bullet"){
+				Debug.Log(enemy.tag.Equals(gameObject.transform.parent.tag));
 				enemy.TakeDamage(damage);
 			}
 			else{

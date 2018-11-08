@@ -8,7 +8,7 @@ public class Head : MonoBehaviour {
 	private int cost;
 	private float dmgInterval= 1f;
 	public Transform FirePoint;
-	private bool onBoard = true;
+	private bool onBoard = false;
 
 	public GameManager gameManager;
 	private bool shooting = false;

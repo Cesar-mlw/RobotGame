@@ -22,9 +22,9 @@ GameObject:
   - component: {fileID: 212027189441624288}
   - component: {fileID: 114956307090584522}
   - component: {fileID: 58008251278364732}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Head 3
-  m_TagString: Head
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,7 +37,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4802591276470702}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}

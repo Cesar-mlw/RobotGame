@@ -150,11 +150,11 @@ GameObject:
   m_Component:
   - component: {fileID: 265930096}
   - component: {fileID: 265930095}
-  - component: {fileID: 265930094}
   - component: {fileID: 265930093}
+  - component: {fileID: 265930094}
   m_Layer: 0
-  m_Name: Track
-  m_TagString: Untagged
+  m_Name: Conveyor
+  m_TagString: Conveyor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,13 +187,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 265930092}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c34f58e3ae55fb42962e81fc81bb893, type: 3}
+  m_Script: {fileID: 11500000, guid: 165a579406665ed48bda8ba350be59d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parts:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  gm: {fileID: 1733650274}
 --- !u!212 &265930095
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -263,7 +260,7 @@ GameObject:
   - component: {fileID: 955653829}
   - component: {fileID: 955653828}
   m_Layer: 0
-  m_Name: camp
+  m_Name: Camp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -398,6 +395,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7eb30f047a4433a4da805b4f61653ed7, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &1733650274 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114848528921630224, guid: 7eb30f047a4433a4da805b4f61653ed7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1557718300}
+  m_Script: {fileID: 11500000, guid: 1ee981f1b00bd134faca5c2ddd108d78, type: 3}
 --- !u!1 &1845728902
 GameObject:
   m_ObjectHideFlags: 0

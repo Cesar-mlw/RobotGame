@@ -4,10 +4,14 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Head
-  - PlayerHead
-  - EnemyHead
+  - ELegPt
+  - ETorsoPt
+  - EHeadPt
+  - PlHeadPt
+  - PlTorsoPt
+  - PlLegPt
   - Bullet
+  - Conveyor
   layers:
   - Default
   - TransparentFX

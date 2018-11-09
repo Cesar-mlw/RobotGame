@@ -6,7 +6,6 @@ public class Conveyor : MonoBehaviour {
 	public GameManager gm;
 	private List<GameObject> spwnedParts = new List<GameObject>();
 
-	private float stoppingPoint = -2.33f;
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating("MovePartsOnConveyor", 1.0f, 2.0f);
@@ -29,11 +28,14 @@ public class Conveyor : MonoBehaviour {
 
 	void StopParts(){
 		float stoppingPoint = -2.33f;
-		foreach (var item in spwnedParts){
-			if(item.transform.position.y <= stoppingPoint){
-				item.GetComponent<Rigidbody2D>().velocity *= 0;
+		if(spwnedParts.Count > 0){
+			foreach (var item in spwnedParts){
+				stoppingPoint += 1.65f * spwnedParts.IndexOf(item);
+				if(item.transform.position.y <= stoppingPoint){
+					item.GetComponent<Rigidbody2D>().velocity *= 0;
+				}
+
 			}
-			stoppingPoint += 1.093f;
 		}
 	}
 }

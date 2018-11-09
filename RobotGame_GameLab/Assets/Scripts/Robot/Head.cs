@@ -22,12 +22,21 @@ public class Head : MonoBehaviour {
 		if(onBoard && !shooting){
 			InvokeRepeating("Shoot", 1.0f, dmgInterval);
 			shooting = true;
+			
+		}
+		if(onBoard){
+			gameObject.GetComponent<Rigidbody2D>().velocity *= 0;
 		}
 	}
 	void Shoot() {
 		Instantiate(bullet, FirePoint.position, FirePoint.rotation, gameObject.transform);
 	}
 
+	private void OnMouseOver() {
+		if(Input.GetMouseButtonDown(0)){
+			gameManager.MovePartToBoard(gameObject);
+		}	
+	}
 	public void TakeDamage(float damage){
 		hp -= damage;
 		if(hp <= 0){
@@ -57,6 +66,15 @@ public class Head : MonoBehaviour {
 		}
 		set{
 			cost = value;
+		}
+	}
+
+	public bool OnBoard{
+		get{
+			return onBoard;
+		}
+		set{
+			onBoard = value;
 		}
 	}
 }

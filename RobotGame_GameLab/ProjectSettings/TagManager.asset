@@ -12,6 +12,7 @@ TagManager:
   - PlLegPt
   - Bullet
   - Conveyor
+  - Camp
   layers:
   - Default
   - TransparentFX

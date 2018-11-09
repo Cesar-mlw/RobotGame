@@ -26,6 +26,7 @@ public class Conveyor : MonoBehaviour {
 		}
 	}
 
+	//Instead of creating a spwned parts array, get a parts on conveyor array and then switch it to the spwned parts array
 	void StopParts(){
 		float stoppingPoint = -2.33f;
 		if(spwnedParts.Count > 0){

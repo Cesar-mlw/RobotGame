@@ -34,7 +34,8 @@ public class Head : MonoBehaviour {
 
 	private void OnMouseOver() {
 		if(Input.GetMouseButtonDown(0)){
-			gameManager.MovePartToBoard(gameObject);
+			if(!onBoard)gameManager.MovePartToBoard(gameObject);
+			else return;
 		}	
 	}
 	public void TakeDamage(float damage){

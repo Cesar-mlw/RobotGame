@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-	private Vector3 SpawnPoint;
+	public GameObject track;
 	private float[] spX = {3.38f, 2.5f};
 	private float[] spY = {0.98f, 0.1f, -0.77f, -1.7f, -2.7f};
 	public GameObject[] parts;
 	private bool equal = false;
 	private List<GameObject> spwnedParts = new List<GameObject>();
-	public GameObject player;
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating("SpawnPartIntoConveyor", 1f, 5.0f);
@@ -18,7 +17,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 	public void SpawnPartIntoConveyor(/*string name*/){//Part selection will be random
 		string name = "Head 1";
@@ -30,7 +28,8 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 		if(part != null && spwnedParts.Count < 3){
-			var spwnedPart = Instantiate(part, new Vector3(4.33f, 0.95f, 0f), new Quaternion(0f, 0f, 0f, 1f), GameObject.FindGameObjectWithTag("Conveyor").transform);
+			Vector3 spwnPoint = new Vector3(track.transform.position.x, track.transform.position.y + 1.5f, track.transform.position.z);
+			var spwnedPart = Instantiate(part, spwnPoint, new Quaternion(0f, 0f, 0f, 1f), GameObject.FindGameObjectWithTag("Conveyor").transform);
 			spwnedParts.Add(spwnedPart);
 		}
 		
@@ -40,25 +39,25 @@ public class GameManager : MonoBehaviour {
 		//This is where the death animations will be handled. This function will take the game object and verify its tag, activating the respective death animation
 	}
 
-	public void MovePartToBoard(GameObject part){
-		Vector3 spwPoint = new Vector3(spX[Random.Range(0, spX.Length)], spY[Random.Range(0, spY.Length)], 0);
+	public void MovePartToBoard(GameObject part, Vector3 spwnPoint){
+		spwnPoint.z = 0;
 		bool ocuppied = false;
 		foreach (var item in spwnedParts){
-			if(item.transform.position == spwPoint){
+			Debug.Log(Vector3.Distance(item.transform.position, spwnPoint));
+			if(Vector3.Distance(item.transform.position, spwnPoint) <= 5f){
 				ocuppied = true;
 				break;
 			}
 		}		
 		if(!ocuppied){
-			part.transform.position = spwPoint;
+			part.transform.position = spwnPoint;
+			part.GetComponent<Head>().OnBoard = true;
 		}
 		else{
-			spwPoint = new Vector3(spX[Random.Range(0, spX.Length)], spY[Random.Range(0, spY.Length)], 0);//FIX THIS
-			part.transform.position = spwPoint;
+			Debug.Log("INVALID POSITION");
+			
 		}
-		part.GetComponent<Head>().OnBoard = true;
 	}
-
 	public List<GameObject> SpwnedParts {
 		get{
 			return spwnedParts;

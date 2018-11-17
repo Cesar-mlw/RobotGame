@@ -10,8 +10,7 @@ public class Conveyor : MonoBehaviour {
 	void Start () {
 		InvokeRepeating("MovePartsOnConveyor", 1.0f, 2.0f);
 	}
-	
-	// Update is called once per frame
+	// I'm having some doubt about who should call the move parts to object method
 	void Update () {
 		spwnedParts = gm.SpwnedParts;
 		StopParts();

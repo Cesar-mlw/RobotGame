@@ -9,7 +9,7 @@ public class Head : MonoBehaviour {
 	private float dmgInterval= 1f;
 	public Transform FirePoint;
 	private bool onBoard = false;
-
+	private Vector3 offset;
 	public GameManager gameManager;
 	private bool shooting = false;
 	public GameObject bullet;
@@ -27,16 +27,24 @@ public class Head : MonoBehaviour {
 		if(onBoard){
 			gameObject.GetComponent<Rigidbody2D>().velocity *= 0;
 		}
+		
+	}
+	private void OnMouseDrag() {
+		Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
+		Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentPoint);
+		currentPosition.z = 0;
+		transform.position = currentPosition;
+		if(transform.position.x > -0.74){
+			onBoard = true;
+			shooting = true;
+		}
+		
+	}
+	private void OnMouseExit() {
+		shooting = false;
 	}
 	void Shoot() {
 		Instantiate(bullet, FirePoint.position, FirePoint.rotation, gameObject.transform);
-	}
-
-	private void OnMouseOver() {
-		if(Input.GetMouseButtonDown(0)){
-			if(!onBoard)gameManager.MovePartToBoard(gameObject);
-			else return;
-		}	
 	}
 	public void TakeDamage(float damage){
 		hp -= damage;

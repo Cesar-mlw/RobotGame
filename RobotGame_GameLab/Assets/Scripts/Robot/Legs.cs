@@ -10,42 +10,52 @@ public class Legs : MonoBehaviour {
 	private int traction = 2;
 	public Transform trs;
 	public Rigidbody2D rb;
+	public GameManager gameManager;
 	private bool onBoard = false;
-	// Use this for initialization
 	void Start () {
+		// List<GameObject> parts = gameManager.SpwnedParts;
+		// foreach (var item in parts){
+		// 	if(item.GetComponent<Legs>() != null){
+		// 		Physics2D.IgnoreCollision(item.GetComponent<PolygonCollider2D>(), gameObject.GetComponent<PolygonCollider2D>());
+		// 	}
+		// 	else if(item.GetComponent<Torso>() != null){
+		// 		Physics2D.IgnoreCollision(item.GetComponent<BoxCollider2D>(), gameObject.GetComponent<PolygonCollider2D>());
+		// 	}
+		// 	else if(item.GetComponent<Head>() != null){
+		// 		Physics2D.IgnoreCollision(item.GetComponent<CircleCollider2D>(), gameObject.GetComponent<PolygonCollider2D>());
+		// 	}
+		// }
+		//THIS WILL ONLY WORK IF THERE'S A SINGLE PARTS OF EACH TYPE. CHANGE THIS FOR FUTURE BUILDS
 	}
-	
-	// Update is called once per frame
+
 	void FixedUpdate() {
 		if(onBoard){
 			gameObject.GetComponent<Rigidbody2D>().velocity = (transform.right * -1) * (speed/traction);
 		}
-		
+
 	}
+
+
 	private void OnMouseDrag() {
 		if(!onBoard){
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
 			Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentPoint);
 			currentPosition.z = 0;
 			transform.position = currentPosition;
-			if(transform.position.x <= 1f){
+			if(transform.position.x <= 1f || transform.position.y >= 1.74f){
 				transform.position = startingPosition;
 			}
 		}
-		
 	}
 	private void OnMouseDown() {
 		startingPosition = transform.position;
+		Debug.Log("Down");
 	}
 	private void OnMouseUp() {
 		if(transform.position.x <= 3.7f){
 			onBoard = true;
 		}
 	}
-	void Stop(){
-		rb.velocity = Vector2.zero;
-	}
-
 	public bool OnBoard{
 		get{
 			return onBoard;

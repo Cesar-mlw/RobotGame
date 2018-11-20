@@ -43,8 +43,20 @@ public class GameManager : MonoBehaviour {
 	public void RemovePartsFromConveyor(){
 		List<GameObject> remove = new List<GameObject>();
 		foreach (var item in partsOnConveyor){
-			if((item.GetComponent<Head>().OnBoard) || (item.GetComponent<Legs>().OnBoard) || (item.GetComponent<Torso>().OnBoard)){
-				remove.Add(item);
+			if(item.GetComponent<Head>() != null){
+				if(item.GetComponent<Head>().OnBoard){
+					remove.Add(item);
+				}
+			}
+			else if(item.GetComponent<Legs>() != null){
+				if(item.GetComponent<Legs>().OnBoard){
+					remove.Add(item);
+				}
+			}
+			else if(item.GetComponent<Torso>() != null){
+				if(item.GetComponent<Torso>().OnBoard){
+					remove.Add(item);
+				}
 			}
 			//we need to make a script to control if they are onBoard or not, kinda like a superclass
 		}
@@ -73,6 +85,11 @@ public class GameManager : MonoBehaviour {
 		}
 		set {
 			partsOnConveyor = value;
+		}
+	}
+	public GameObject[] Parts{
+		get{
+			return parts;
 		}
 	}
 }

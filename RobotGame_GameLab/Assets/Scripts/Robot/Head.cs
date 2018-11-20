@@ -14,6 +14,19 @@ public class Head : MonoBehaviour {
 	public Transform FirePoint;
 	// Use this for initialization
 	void Start () {
+		// List<GameObject> parts = gameManager.SpwnedParts;
+		// foreach (var item in parts){
+		// 	if(item.GetComponent<Legs>() != null){
+		// 		Physics2D.IgnoreCollision(item.GetComponent<PolygonCollider2D>(), gameObject.GetComponent<CircleCollider2D>());
+		// 	}
+		// 	else if(item.GetComponent<Torso>() != null){
+		// 		Physics2D.IgnoreCollision(item.GetComponent<BoxCollider2D>(), gameObject.GetComponent<CircleCollider2D>());
+		// 	}
+		// 	else if(item.GetComponent<Head>() != null){
+		// 		Physics2D.IgnoreCollision(item.GetComponent<CircleCollider2D>(), gameObject.GetComponent<CircleCollider2D>());
+		// 	}
+		// }
+		//THIS WILL ONLY WORK IF THERE'S A SINGLE PARTS OF EACH TYPE. CHANGE THIS FOR FUTURE BUILDS
 	}
 	
 	// Update is called once per frame
@@ -34,7 +47,7 @@ public class Head : MonoBehaviour {
 			Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentPoint);
 			currentPosition.z = 0;
 			transform.position = currentPosition;
-			if(transform.position.x <= 1f){
+			if(transform.position.x <= 1f || transform.position.y >= 1.74f){
 				transform.position = startingPosition;
 			}
 		}
@@ -47,6 +60,9 @@ public class Head : MonoBehaviour {
 		if(transform.position.x <= 3.7f){
 			onBoard = true;
 			shooting = false;
+		}
+		else{
+			transform.position = startingPosition;
 		}
 	}
 	void Shoot() {

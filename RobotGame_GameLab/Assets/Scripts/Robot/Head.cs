@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Head : MonoBehaviour {
 	private float hp = 200;
-	private Rigidbody2D rb;
 	private int cost;
 	private float dmgInterval= 1f;
-	public Transform FirePoint;
 	private bool onBoard = false;
-	private Vector3 offset;
-	public GameManager gameManager;
 	private bool shooting = false;
+	private Vector3 startingPosition;
+	public GameManager gameManager;
 	public GameObject bullet;
+	public Transform FirePoint;
 	// Use this for initialization
 	void Start () {
 	}
@@ -30,18 +29,25 @@ public class Head : MonoBehaviour {
 		
 	}
 	private void OnMouseDrag() {
-		Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
-		Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentPoint);
-		currentPosition.z = 0;
-		transform.position = currentPosition;
-		if(transform.position.x > -0.74){
-			onBoard = true;
-			shooting = true;
+		if(!onBoard){
+			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
+			Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentPoint);
+			currentPosition.z = 0;
+			transform.position = currentPosition;
+			if(transform.position.x <= 1f){
+				transform.position = startingPosition;
+			}
 		}
 		
 	}
-	private void OnMouseExit() {
-		shooting = false;
+	private void OnMouseDown() {
+		startingPosition = transform.position;
+	}
+	private void OnMouseUp() {
+		if(transform.position.x <= 3.7f){
+			onBoard = true;
+			shooting = false;
+		}
 	}
 	void Shoot() {
 		Instantiate(bullet, FirePoint.position, FirePoint.rotation, gameObject.transform);

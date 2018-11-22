@@ -13,6 +13,7 @@ TagManager:
   - Bullet
   - Conveyor
   - Camp
+  - Anchor
   layers:
   - Default
   - TransparentFX

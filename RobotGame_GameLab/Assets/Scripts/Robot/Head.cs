@@ -12,6 +12,7 @@ public class Head : MonoBehaviour {
 	public GameManager gameManager;
 	public GameObject bullet;
 	public Transform FirePoint;
+	private GameObject[] anchors = new GameObject[15];
 	// Use this for initialization
 	void Start () {
 		// List<GameObject> parts = gameManager.SpwnedParts;
@@ -27,6 +28,7 @@ public class Head : MonoBehaviour {
 		// 	}
 		// }
 		//THIS WILL ONLY WORK IF THERE'S A SINGLE PARTS OF EACH TYPE. CHANGE THIS FOR FUTURE BUILDS
+		anchors = GameObject.FindGameObjectsWithTag("Anchor"); // FIX THIS -> THIS SHOULD COME FROM THE GAME MANAGER, OR TRY TO MAKE THIS MORE EFFICIENT
 	}
 	
 	// Update is called once per frame
@@ -46,9 +48,24 @@ public class Head : MonoBehaviour {
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
 			Vector3 currentPosition = Camera.main.ScreenToWorldPoint(currentPoint);
 			currentPosition.z = 0;
-			transform.position = currentPosition;
-			if(transform.position.x <= 1f || transform.position.y >= 1.74f){
+			Vector3 closest = currentPosition;
+			float shortest = float.MaxValue;
+			foreach (var item in anchors){
+				float distance = Vector3.Distance(Camera.main.ScreenToWorldPoint(Input.mousePosition), item.transform.position);
+				if(distance < shortest){
+					shortest = distance;
+					closest = item.transform.position;
+				}
+			}
+			if(Camera.main.ScreenToWorldPoint(Input.mousePosition).x <= 1f || Camera.main.ScreenToWorldPoint(Input.mousePosition).y >= 1.74f){
 				transform.position = startingPosition;
+			}
+			else if(Camera.main.ScreenToWorldPoint(Input.mousePosition).x < 4.294f){
+				closest.z = 0;
+				transform.position = closest;
+			}
+			else{
+				transform.position = currentPosition;
 			}
 		}
 		

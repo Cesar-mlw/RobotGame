@@ -9,12 +9,14 @@ public class GameManager : MonoBehaviour {
 	private List<GameObject> spwnedParts = new List<GameObject>();
 	private List<GameObject> partsOnConveyor = new List<GameObject>();
 	private List<GameObject> partsOnBoard = new List<GameObject>();
+	private GameObject[] anchors;
 
 	//Testing only
 
 	private string[] names = {"Head 1", "Legs", "Torso"};
 	void Start () {
 		InvokeRepeating("SpawnPartIntoConveyor", 1f, 5f);
+		//anchors = GameObject.FindGameObjectsWithTag("Anchor");
 	}
 	
 	// Update is called once per frame
@@ -66,6 +68,9 @@ public class GameManager : MonoBehaviour {
 			}
 		}
 	}
+	// public GameObject[] GetAnchor(){
+	// 	return anchors;
+	// }
 	public void Die(GameObject go) {
 		Destroy(go);
 		if(spwnedParts.Contains(go)){
@@ -92,4 +97,5 @@ public class GameManager : MonoBehaviour {
 			return parts;
 		}
 	}
+
 }

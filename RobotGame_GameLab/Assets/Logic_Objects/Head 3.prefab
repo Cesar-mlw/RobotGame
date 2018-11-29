@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 58008251278364732}
   m_Layer: 9
   m_Name: Head 3
-  m_TagString: Parts
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,10 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1a9ac6a7102323449152e50998efd21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FirePoint: {fileID: 4802591276470702}
   gameManager: {fileID: 114848528921630224, guid: 7eb30f047a4433a4da805b4f61653ed7,
     type: 2}
   bullet: {fileID: 1563105977512612, guid: 55ead8756ca881940aa564048f606414, type: 2}
-  FirePoint: {fileID: 4802591276470702}
 --- !u!212 &212027189441624288
 SpriteRenderer:
   m_ObjectHideFlags: 1

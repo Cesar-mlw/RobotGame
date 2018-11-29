@@ -20,11 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4032817856776384}
   - component: {fileID: 212861699758729890}
-  - component: {fileID: 114969909913441298}
   - component: {fileID: 114756731520813470}
   - component: {fileID: 50068349664003152}
   - component: {fileID: 60610817848177946}
-  - component: {fileID: 114948043957093156}
   m_Layer: 9
   m_Name: Legs
   m_TagString: Untagged
@@ -52,7 +50,7 @@ Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1316688229962218}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -117,29 +115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trs: {fileID: 4032817856776384}
   rb: {fileID: 50068349664003152}
-  gameManager: {fileID: 0}
---- !u!114 &114948043957093156
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1316688229962218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b0b6445aac06d4b9e290549819bc8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114969909913441298
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1316688229962218}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51b0b6445aac06d4b9e290549819bc8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212861699758729890
 SpriteRenderer:
   m_ObjectHideFlags: 1

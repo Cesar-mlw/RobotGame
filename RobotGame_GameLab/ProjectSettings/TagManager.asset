@@ -14,7 +14,6 @@ TagManager:
   - Conveyor
   - Camp
   - Anchor
-  - Parts
   layers:
   - Default
   - TransparentFX

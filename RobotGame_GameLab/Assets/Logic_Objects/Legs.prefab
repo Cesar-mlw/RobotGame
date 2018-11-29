@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114756731520813470}
   - component: {fileID: 50068349664003152}
   - component: {fileID: 60610817848177946}
+  - component: {fileID: 249306767000933808}
   m_Layer: 9
   m_Name: Legs
   m_TagString: Leg
@@ -103,8 +104,8 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
@@ -264,3 +265,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!249 &249306767000933808
+AreaEffector2D:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1316688229962218}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGlobalAngle: 0
+  m_ForceAngle: 0.47
+  m_ForceMagnitude: 10
+  m_ForceVariation: 0.39
+  m_ForceTarget: 0
+  m_Drag: 0
+  m_AngularDrag: 0

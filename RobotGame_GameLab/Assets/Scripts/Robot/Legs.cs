@@ -82,4 +82,5 @@ public class Legs : MonoBehaviour {
 			return onBoard;
 		}
 	}
+    
 }

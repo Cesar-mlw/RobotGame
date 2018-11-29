@@ -11,6 +11,7 @@ public class Head : MonoBehaviour {
 	private Vector3 startingPosition;
 	public GameManager gameManager;
 	public GameObject bullet;
+    public GameObject LegsPosition;
 	public Transform FirePoint;
 	private GameObject[] anchors = new GameObject[15];
 	// Use this for initialization
@@ -30,19 +31,19 @@ public class Head : MonoBehaviour {
 		//THIS WILL ONLY WORK IF THERE'S A SINGLE PARTS OF EACH TYPE. CHANGE THIS FOR FUTURE BUILDS
 		anchors = GameObject.FindGameObjectsWithTag("Anchor"); // FIX THIS -> THIS SHOULD COME FROM THE GAME MANAGER, OR TRY TO MAKE THIS MORE EFFICIENT
 	}
-	
-	// Update is called once per frame
-	void FixedUpdate() {
-		if(onBoard && !shooting){
-			InvokeRepeating("Shoot", 1.0f, dmgInterval);
-			shooting = true;
-			
-		}
-		if(onBoard){
-			gameObject.GetComponent<Rigidbody2D>().velocity *= 0;
-		}
-		
-	}
+
+    // Update is called once per frame
+    void FixedUpdate() {
+        if (onBoard && !shooting) {
+            InvokeRepeating("Shoot", 1.0f, dmgInterval);
+            shooting = true;
+
+        }
+        if (onBoard) {
+            gameObject.GetComponent<Rigidbody2D>().velocity *= 0;
+        }
+  
+    }
 	private void OnMouseDrag() {
 		if(!onBoard){
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
@@ -125,4 +126,12 @@ public class Head : MonoBehaviour {
 			onBoard = value;
 		}
 	}
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Leg")
+        {
+            Debug.Log("FUCK THIS SHIT");
+
+        }
+    }
 }

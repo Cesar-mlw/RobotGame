@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 61149068767219588}
   m_Layer: 9
   m_Name: Torso
-  m_TagString: Untagged
+  m_TagString: Torso
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd855f8569cb9984bac069c346224a9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!212 &212415409883961458
 SpriteRenderer:
   m_ObjectHideFlags: 1

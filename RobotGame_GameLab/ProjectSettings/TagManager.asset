@@ -14,6 +14,9 @@ TagManager:
   - Conveyor
   - Camp
   - Anchor
+  - Head
+  - Leg
+  - Torso
   layers:
   - Default
   - TransparentFX

@@ -31,7 +31,9 @@ public class Head : MonoBehaviour {
 		//THIS WILL ONLY WORK IF THERE'S A SINGLE PARTS OF EACH TYPE. CHANGE THIS FOR FUTURE BUILDS
 		anchors = GameObject.FindGameObjectsWithTag("Anchor"); // FIX THIS -> THIS SHOULD COME FROM THE GAME MANAGER, OR TRY TO MAKE THIS MORE EFFICIENT
 	}
-
+	private void onTriggerEnter2D (Collider2D collision) {
+		Debug.Log("Stay");
+	}
     // Update is called once per frame
     void FixedUpdate() {
         if (onBoard && !shooting) {
@@ -44,12 +46,6 @@ public class Head : MonoBehaviour {
         }
   
     }
-	private void OnTriggerEnter2D(Collider2D collision) {
-		Debug.Log("Hit Head");
-	}
-	private void OnTriggernEnter(Collider collision) {
-		Debug.Log("collision.tag");
-	}
 	private void OnMouseDrag() {
 		if(!onBoard){
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);

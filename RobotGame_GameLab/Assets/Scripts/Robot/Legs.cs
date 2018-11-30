@@ -12,6 +12,7 @@ public class Legs : MonoBehaviour {
 	public Rigidbody2D rb;
 	public GameManager gameManager;
 	private bool onBoard = false;
+	private bool walking = false;
 
 	private GameObject[] anchors;
 	void Start () {
@@ -30,16 +31,17 @@ public class Legs : MonoBehaviour {
 		//THIS WILL ONLY WORK IF THERE'S A SINGLE PARTS OF EACH TYPE. CHANGE THIS FOR FUTURE BUILDS
 		anchors = GameObject.FindGameObjectsWithTag("Anchor"); // FIX THIS -> THIS SHOULD COME FROM THE GAME MANAGER, OR TRY TO MAKE THIS MORE EFFICIENT
 	}
-
 	void FixedUpdate() {
-		if(onBoard){
+		if(onBoard && Input.GetKeyDown(KeyCode.UpArrow)){
 			gameObject.GetComponent<Rigidbody2D>().velocity = (transform.right * -1) * (speed/traction);
+			walking = true;
+		}
+		else if(onBoard && !walking){
+			gameObject.GetComponent<Rigidbody2D>().velocity *= 0;
 		}
 
 	}
-	private void OnTriggerEnter2D(Collider2D collision) {
-		Debug.Log("Hit Leg");
-	}
+	
 	private void OnMouseDrag() {
 		if(!onBoard){
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
@@ -85,3 +87,4 @@ public class Legs : MonoBehaviour {
 	}
     
 }
+//try to detect collision between two parts

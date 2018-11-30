@@ -202,7 +202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 493102130}
   - component: {fileID: 493102131}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (9)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 635143061}
   - component: {fileID: 635143062}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (2)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -282,7 +282,7 @@ GameObject:
   m_Component:
   - component: {fileID: 690440786}
   - component: {fileID: 690440787}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (11)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -322,7 +322,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695784688}
   - component: {fileID: 695784689}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (1)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -362,6 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 955653829}
   - component: {fileID: 955653828}
+  - component: {fileID: 955653830}
   m_Layer: 0
   m_Name: Camp
   m_TagString: Camp
@@ -443,6 +444,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &955653830
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955653827}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1077411239
 GameObject:
   m_ObjectHideFlags: 0
@@ -452,7 +473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1077411240}
   - component: {fileID: 1077411241}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (6)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -492,7 +513,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1287293772}
   - component: {fileID: 1287293773}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (8)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -532,7 +553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1429728915}
   - component: {fileID: 1429728916}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (13)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -572,7 +593,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1439730678}
   - component: {fileID: 1439730679}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (12)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -612,7 +633,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1452344510}
   - component: {fileID: 1452344511}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (14)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -652,7 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1526630314}
   - component: {fileID: 1526630315}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (3)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -767,7 +788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1599878480}
   - component: {fileID: 1599878481}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (7)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -807,7 +828,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1681268782}
   - component: {fileID: 1681268783}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (4)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -930,7 +951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2009925413}
   - component: {fileID: 2009925414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (10)
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -970,7 +991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082123430}
   - component: {fileID: 2082123431}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor
   m_TagString: Anchor
   m_Icon: {fileID: 0}
@@ -1010,7 +1031,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2085493821}
   - component: {fileID: 2085493822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Anchor (5)
   m_TagString: Anchor
   m_Icon: {fileID: 0}

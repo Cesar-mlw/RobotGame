@@ -202,7 +202,6 @@ GameObject:
   m_Component:
   - component: {fileID: 493102130}
   - component: {fileID: 493102131}
-  - component: {fileID: 493102132}
   m_Layer: 0
   m_Name: Anchor (9)
   m_TagString: Anchor
@@ -234,34 +233,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &493102132
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 493102129}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &635143060
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,7 +242,6 @@ GameObject:
   m_Component:
   - component: {fileID: 635143061}
   - component: {fileID: 635143062}
-  - component: {fileID: 635143063}
   m_Layer: 0
   m_Name: Anchor (2)
   m_TagString: Anchor
@@ -303,34 +273,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &635143063
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 635143060}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &690440785
 GameObject:
   m_ObjectHideFlags: 0
@@ -340,7 +282,6 @@ GameObject:
   m_Component:
   - component: {fileID: 690440786}
   - component: {fileID: 690440787}
-  - component: {fileID: 690440788}
   m_Layer: 0
   m_Name: Anchor (11)
   m_TagString: Anchor
@@ -372,34 +313,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &690440788
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 690440785}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &695784687
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +322,6 @@ GameObject:
   m_Component:
   - component: {fileID: 695784688}
   - component: {fileID: 695784689}
-  - component: {fileID: 695784690}
   m_Layer: 0
   m_Name: Anchor (1)
   m_TagString: Anchor
@@ -441,34 +353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &695784690
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 695784687}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &955653827
 GameObject:
   m_ObjectHideFlags: 0
@@ -568,7 +452,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1077411240}
   - component: {fileID: 1077411241}
-  - component: {fileID: 1077411242}
   m_Layer: 0
   m_Name: Anchor (6)
   m_TagString: Anchor
@@ -600,34 +483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1077411242
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1077411239}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1287293771
 GameObject:
   m_ObjectHideFlags: 0
@@ -637,7 +492,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1287293772}
   - component: {fileID: 1287293773}
-  - component: {fileID: 1287293774}
   m_Layer: 0
   m_Name: Anchor (8)
   m_TagString: Anchor
@@ -669,34 +523,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1287293774
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1287293771}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1429728914
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,7 +532,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1429728915}
   - component: {fileID: 1429728916}
-  - component: {fileID: 1429728917}
   m_Layer: 0
   m_Name: Anchor (13)
   m_TagString: Anchor
@@ -738,34 +563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1429728917
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1429728914}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1439730677
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,7 +572,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1439730678}
   - component: {fileID: 1439730679}
-  - component: {fileID: 1439730680}
   m_Layer: 0
   m_Name: Anchor (12)
   m_TagString: Anchor
@@ -807,34 +603,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1439730680
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1439730677}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1452344509
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,7 +612,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1452344510}
   - component: {fileID: 1452344511}
-  - component: {fileID: 1452344512}
   m_Layer: 0
   m_Name: Anchor (14)
   m_TagString: Anchor
@@ -876,34 +643,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1452344512
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1452344509}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1526630313
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +652,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1526630314}
   - component: {fileID: 1526630315}
-  - component: {fileID: 1526630316}
   m_Layer: 0
   m_Name: Anchor (3)
   m_TagString: Anchor
@@ -945,34 +683,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1526630316
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1526630313}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1001 &1557718300
 Prefab:
   m_ObjectHideFlags: 0
@@ -1021,13 +731,13 @@ Prefab:
         type: 2}
       propertyPath: parts.Array.data[0]
       value: 
-      objectReference: {fileID: 1477656089639394, guid: 861cebb1558fca74eb6b8d44825e4edc,
+      objectReference: {fileID: 1954230377404762, guid: b5fccd0587a33644a9d60f54704e9075,
         type: 2}
     - target: {fileID: 114848528921630224, guid: 7eb30f047a4433a4da805b4f61653ed7,
         type: 2}
       propertyPath: parts.Array.data[1]
       value: 
-      objectReference: {fileID: 1316688229962218, guid: 688ff4b67c176b84fb2a6c3e90bea358,
+      objectReference: {fileID: 1015704849128572, guid: 6eb0c286a36d3e049b258981a44cdd53,
         type: 2}
     - target: {fileID: 114848528921630224, guid: 7eb30f047a4433a4da805b4f61653ed7,
         type: 2}
@@ -1057,7 +767,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1599878480}
   - component: {fileID: 1599878481}
-  - component: {fileID: 1599878482}
   m_Layer: 0
   m_Name: Anchor (7)
   m_TagString: Anchor
@@ -1089,34 +798,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1599878482
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1599878479}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &1681268781
 GameObject:
   m_ObjectHideFlags: 0
@@ -1126,7 +807,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1681268782}
   - component: {fileID: 1681268783}
-  - component: {fileID: 1681268784}
   m_Layer: 0
   m_Name: Anchor (4)
   m_TagString: Anchor
@@ -1158,34 +838,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &1681268784
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1681268781}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!114 &1733650274 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114848528921630224, guid: 7eb30f047a4433a4da805b4f61653ed7,
@@ -1278,7 +930,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2009925413}
   - component: {fileID: 2009925414}
-  - component: {fileID: 2009925415}
   m_Layer: 0
   m_Name: Anchor (10)
   m_TagString: Anchor
@@ -1310,34 +961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &2009925415
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2009925412}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &2082123429
 GameObject:
   m_ObjectHideFlags: 0
@@ -1347,7 +970,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2082123430}
   - component: {fileID: 2082123431}
-  - component: {fileID: 2082123432}
   m_Layer: 0
   m_Name: Anchor
   m_TagString: Anchor
@@ -1379,34 +1001,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &2082123432
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2082123429}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!1 &2085493820
 GameObject:
   m_ObjectHideFlags: 0
@@ -1416,7 +1010,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2085493821}
   - component: {fileID: 2085493822}
-  - component: {fileID: 2085493823}
   m_Layer: 0
   m_Name: Anchor (5)
   m_TagString: Anchor
@@ -1448,31 +1041,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f9cdfa2f7828084c83198c15e769118, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Occupied: 0
-  count: 0
-  ObjectTag: 
---- !u!61 &2085493823
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2085493820}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0

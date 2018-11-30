@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour {
 		//anchors = GameObject.FindGameObjectsWithTag("Anchor");
 	}
 	
-	// Update is called once per frame
 	void Update () {
 	}
 	public void SpawnPartIntoConveyor(/*string name*/){//Part selection will be random

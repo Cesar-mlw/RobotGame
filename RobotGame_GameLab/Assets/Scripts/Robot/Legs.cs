@@ -6,7 +6,7 @@ public class Legs : MonoBehaviour {
 	private float hp;
 	private int cost;
 	private Vector3 startingPosition;
-	private float speed = 0.7f;
+	private float speed = 0.3f;
 	private int traction = 2;
 	public Transform trs;
 	public Rigidbody2D rb;
@@ -37,8 +37,9 @@ public class Legs : MonoBehaviour {
 		}
 
 	}
-
-
+	private void OnTriggerEnter2D(Collider2D collision) {
+		Debug.Log("Hit Leg");
+	}
 	private void OnMouseDrag() {
 		if(!onBoard){
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);

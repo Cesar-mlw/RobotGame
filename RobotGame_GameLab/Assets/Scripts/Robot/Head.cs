@@ -10,8 +10,8 @@ public class Head : MonoBehaviour {
 	private bool shooting = false;
 	private Vector3 startingPosition;
 	public GameManager gameManager;
+	public GameObject Mount;
 	public GameObject bullet;
-    public GameObject LegsPosition;
 	public Transform FirePoint;
 	private GameObject[] anchors = new GameObject[15];
 	// Use this for initialization
@@ -44,6 +44,12 @@ public class Head : MonoBehaviour {
         }
   
     }
+	private void OnTriggerEnter2D(Collider2D collision) {
+		Debug.Log("Hit Head");
+	}
+	private void OnTriggernEnter(Collider collision) {
+		Debug.Log("collision.tag");
+	}
 	private void OnMouseDrag() {
 		if(!onBoard){
 			Vector3 currentPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Input.mousePosition.z);
@@ -126,12 +132,4 @@ public class Head : MonoBehaviour {
 			onBoard = value;
 		}
 	}
-    public void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Leg")
-        {
-            Debug.Log("FUCK THIS SHIT");
-
-        }
-    }
 }
